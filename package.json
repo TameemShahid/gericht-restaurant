@@ -21,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +49,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
@@ -56,5 +59,6 @@
     "hooks": {
       "pre-push": "npm run test:coverage && node check-coverage.tsx"
     }
-  }
+  },
+  "homepage": "https://TameemShahid.github.io/gericht-restaurant"
 }
