@@ -2,6 +2,7 @@ import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import Chef from './components/Chef/Chef';
 import FindUs from './components/FindUs/FindUs';
+import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
@@ -21,6 +22,7 @@ const App = () => {
       <Laurels />
       <Gallery />
       <FindUs />
+      <Footer />
     </div>
   );
 };
