@@ -30,9 +30,9 @@ const Footer = () => (
           alt="footer_spoon"
         />
         <div className="app__footer-links_icons">
-          <FiFacebook />
-          <FiTwitter />
-          <FiInstagram />
+          <FiFacebook data-testid="facebook-icon" />
+          <FiTwitter data-testid="twitter-icon" />
+          <FiInstagram data-testid="instagram-icon" />
         </div>
       </div>
 
