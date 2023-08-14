@@ -3,6 +3,15 @@ import '@testing-library/jest-dom/extend-expect';
 import Intro from './Intro';
 
 describe('<Intro />', () => {
+  beforeAll(() => {
+    jest
+      .spyOn(window.HTMLMediaElement.prototype, 'play')
+      .mockResolvedValue(undefined);
+    jest
+      .spyOn(window.HTMLMediaElement.prototype, 'pause')
+      .mockImplementation(jest.fn());
+  });
+
   it('renders without crashing', () => {
     render(<Intro />);
     const videoElement = screen.getByTestId('video');
