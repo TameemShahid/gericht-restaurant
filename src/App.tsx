@@ -1,6 +1,7 @@
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import Chef from './components/Chef/Chef';
+import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Laurels from './components/Laurels/Laurels';
@@ -17,6 +18,7 @@ const App = () => {
       <Chef />
       <Intro />
       <Laurels />
+      <Gallery />
     </div>
   );
 };
