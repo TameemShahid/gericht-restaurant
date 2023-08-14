@@ -26,6 +26,7 @@ const Intro = () => {
         controls={false}
         muted
         onClick={handleVideoPlay}
+        data-testid="video"
       />
       <div
         className="app__video-overlay flex__center"
@@ -34,9 +35,9 @@ const Intro = () => {
       >
         <div className="app__video-overlay_circle flex__center">
           {playVideo ? (
-            <BsPauseFill color="#fff" fontSize={30} />
+            <BsPauseFill color="#fff" fontSize={30} data-testid="pause" />
           ) : (
-            <BsFillPlayFill color="#fff" fontSize={30} />
+            <BsFillPlayFill color="#fff" fontSize={30} data-testid="play" />
           )}
         </div>
       </div>
