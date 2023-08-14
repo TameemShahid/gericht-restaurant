@@ -18,6 +18,7 @@ module.exports = {
     '\\.(css|less|scss|sass)$': '<rootDir>/__mocks__/fileMock.tsx',
     '\\.(jpg|jpeg|png|gif|webp|svg|mp4)$': '<rootDir>/__mocks__/fileMock.tsx',
   },
+  coverageReporters: ['json', 'lcov', 'text', 'clover', 'json-summary'],
 };
 
 export {};
